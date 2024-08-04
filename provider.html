@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service Provider Finder</title>
+    <link rel="stylesheet" href="styles2.css">
+    <!-- Favicon -->
+    <link rel="icon" href="https://www.shutterstock.com/image-vector/electrical-services-logo-design-template-260nw-1911109372.jpg" type="image/x-jpg">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="https://www.shutterstock.com/image-vector/electrical-services-logo-design-template-260nw-1911109372.jpg" alt="Logo">
+            </div>
+            <div class="contact">
+                <span></span>
+                <a href="tel:+1234567890"></a>
+            </div>
+            <div class="search-container">
+                <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#00bfff" width="24px" height="24px">
+                    <path d="M15.5,14h-0.79l-0.28-0.27c1.19-1.39,1.88-3.19,1.88-5.11C16.31,4.68,13.63,2,10.16,2S4,4.68,4,8.11s2.68,6.11,6.11,6.11 c1.92,0,3.72-0.69,5.11-1.88l0.27,0.28v0.79l4.25,4.25c0.41,0.41,1.07,0.41,1.48,0s0.41-1.07,0-1.48L15.5,14z M10.16,12.11 c-2.21,0-4-1.79-4-4s1.79-4,4-4s4,1.79,4,4S12.37,12.11,10.16,12.11z"/>
+                </svg>
+                <input type="text" placeholder="Search...">
+            </div>
+           
+        </div>
+    </header>
+    <nav>
+        <ul class="navbar">
+            <li><a href="#"><span class="home-icon">🏠</span> Home</a></li>
+            <li><a href="#">Applying</a></li>
+            <li><a href="#">Community</a></li>
+            <li><a href="#">Providers</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Participants</a></li>
+            <li><a href="#">Provider Finder</a></li>
+        </ul>
+    </nav>
+
+    <!-- Provider Finder Section -->
+    <section class="provider-finder">
+        <div class="provider-finder-container">
+            <h2>Provider Finder</h2>
+            <form class="provider-form">
+                <label for="postcode">Suburb/Postcode:</label>
+                <input type="text" id="postcode" placeholder="Type here Postcode and then click Search button">
+                
+                <label for="state">State/Territory:</label>
+                <select id="state">
+                    <option value="NN">None</option>
+                    <option value="AP">Andhra Pradesh</option>
+                    <option value="AR">Arunachal Pradesh</option>
+                    <option value="AS">Assam</option>
+                    <option value="BR">Bihar</option>
+                    <option value="CT">Chhattisgarh</option>
+                    <option value="GO">Goa</option>
+                    <option value="GJ">Gujarat</option>
+                    <option value="HR">Haryana</option>
+                    <option value="HP">Himachal Pradesh</option>
+                    <option value="JH">Jharkhand</option>
+                    <option value="KA">Karnataka</option>
+                    <option value="KL">Kerala</option>
+                    <option value="MP">Madhya Pradesh</option>
+                    <option value="MH">Maharashtra</option>
+                    <option value="MN">Manipur</option>
+                    <option value="ME">Meghalaya</option>
+                    <option value="MZ">Mizoram</option>
+                    <option value="NL">Nagaland</option>
+                    <option value="OD">Odisha</option>
+                    <option value="PB">Punjab</option>
+                    <option value="RJ">Rajasthan</option>
+                    <option value="SK">Sikkim</option>
+                    <option value="TN">Tamil Nadu</option>
+                    <option value="TS">Telangana</option>
+                    <option value="TR">Tripura</option>
+                    <option value="UP">Uttar Pradesh</option>
+                    <option value="UK">Uttarakhand</option>
+                    <option value="WB">West Bengal</option>
+                    <option value="DL">Delhi</option>
+                    <option value="LD">Lakshadweep</option>
+                    <option value="PY">Puducherry</option>
+                    <option value="CH">Chandigarh</option>
+                    <option value="DD">Dadra and Nagar Haveli and Daman and Diu</option>
+                    <option value="JK">Jammu and Kashmir</option>
+                    <option value="LA">Ladakh</option>
+                </select>
+
+                <label for="registration-group">Registration Group:</label>
+                <select id="registration-group" multiple>
+                    <option value="Accommodation">Accommodation / Tenancy Assistance</option>
+                    <option value="Assistance Animals">Assistance Animals</option>
+                    <option value="Daily Activities">Daily Personal Activities</option>
+                    <option value="Group Activities">Group and Centre Based Activities</option>
+                    <option value="Household Tasks">Household tasks</option>
+                    <option value="Communication Equipment">Communication and information equipment</option>
+                    <!-- Add other options here -->
+                </select>
+                
+                <label for="provider-name">Provider ABN/Name:</label>
+                <input type="text" id="provider-name" placeholder="Type here...">
+                
+                <label for="provider-status">Provider Status:</label>
+                <select id="provider-status">
+                    <option value="active">Active</option>
+                    <option value="inactive">Inactive</option>
+                </select>
+                
+                <button type="reset">RESET</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Provider List Section -->
+    <section class="provider-list">
+        <h2>Service Providers</h2>
+        <div class="row">
+            <!-- Provider 1 -->
+            <div class="column">
+                <div class="provider-box">
+                    <h3>Ace Plan Management</h3>
+                    <p><strong>Address:</strong> Sandhurst Boulevard, Sandhurst, VIC 3977</p>
+                    <p><strong>Phone:</strong> 0423 128 110</p>
+                    <p><strong>Email:</strong> <a href="mailto:cheryl@aceplanmanagement.com.au">cheryl@aceplanmanagement.com.au</a></p>
+                </div>
+            </div>
+            <!-- Provider 2 -->
+            <div class="column">
+                <div class="provider-box">
+                    <h3>Elite Disability Services</h3>
+                    <p><strong>Address:</strong> 191 Mitchell Street, Palmerston City, NT 0830</p>
+                    <p><strong>Phone:</strong> 0482 843 009</p>
+                    <p><strong>Email:</strong> <a href="mailto:info@elitedisabilityservices.com.au">info@elitedisabilityservices.com.au</a></p>
+                </div>
+            </div>
+            <!-- Provider 3 -->
+            <div class="column">
+                <div class="provider-box">
+                    <h3>Provider 3</h3>
+                    <p><strong>Address:</strong> Address of Provider 3</p>
+                    <p><strong>Phone:</strong> 1234 567 890</p>
+                    <p><strong>Email:</strong> <a href="mailto:provider3@example.com">provider3@example.com</a></p>
+                </div>
+            </div>
+            <!-- Provider 4 -->
+            <div class="column">
+                <div class="provider-box">
+                    <h3>Provider 4</h3>
+                    <p><strong>Address:</strong> Address of Provider 4</p>
+                    <p><strong>Phone:</strong> 1234 567 891</p>
+                    <p><strong>Email:</strong> <a href="mailto:provider4@example.com">provider4@example.com</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="pagination">
+            <button class="prev">Previous</button>
+            <button class="next">Next</button>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map">
+    <h2>Find Our Locations</h2>
+    <div class="map-container">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3890.8536899482665!2d80.20986851573236!3d13.08268099078717!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a526682d16f359f%3A0x9f6a6c606e6e6f7d!2sChennai%2C%20Tamil%20Nadu%2C%20India!5e0!3m2!1sen!2sin!4v1627567288830!5m2!1sen!2sin" width="600" height="450" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+</section>
+
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Your Company. All rights reserved.</p>
+        </div>
+        <ul class="footer-links">
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+    </footer>
+    <script>
+
+document.addEventListener('DOMContentLoaded', () => {
+    const providers = [
+    {
+        name: 'Ace Electronic Appliances',
+        address: '123 Appliance Street, Home City, CA 94043',
+        phone: '0423 128 110',
+        email: 'support@aceelectronicappliances.com'
+    },
+    {
+        name: 'Elite Home Electronics',
+        address: '456 Comfort Avenue, Austin, TX 73301',
+        phone: '0482 843 009',
+        email: 'info@elitehomeelectronics.com'
+    },
+    {
+        name: 'Bright Future Electronics',
+        address: '789 Innovation Drive, Boston, MA 02101',
+        phone: '1234 567 890',
+        email: 'contact@brightfutureelectronics.com'
+    },
+    {
+        name: 'Sunshine Electronic Appliances',
+        address: '101 Solar Lane, Orlando, FL 32801',
+        phone: '1234 567 891',
+        email: 'info@sunshineelectronicappliances.com'
+    },
+    {
+        name: 'Happy Life Electronics',
+        address: '202 Circuit Road, San Jose, CA 95101',
+        phone: '1234 567 892',
+        email: 'support@happylifeelectronics.com'
+    },
+    {
+        name: 'Care Plus Home Electronics',
+        address: '303 Innovation Blvd, Seattle, WA 98101',
+        phone: '1234 567 893',
+        email: 'help@careplushomeelectronics.com'
+    },
+    {
+        name: 'Helping Hands Electronics',
+        address: '404 Home Lane, Dallas, TX 75201',
+        phone: '1234 567 894',
+        email: 'support@helpinghandselectronics.com'
+    },
+    {
+        name: 'Quality Home Electronics',
+        address: '505 Quality St, Atlanta, GA 30301',
+        phone: '1234 567 895',
+        email: 'contact@qualityhomeelectronics.com'
+    },
+    {
+        name: 'Compassionate Electronics',
+        address: '606 Compassion Blvd, Denver, CO 80201',
+        phone: '1234 567 896',
+        email: 'info@compassionateelectronics.com'
+    },
+    {
+        name: 'Supportive Electronic Appliances',
+        address: '707 Support Road, Miami, FL 33101',
+        phone: '1234 567 897',
+        email: 'support@supportiveelectronicappliances.com'
+    },
+    {
+        name: 'Inclusive Home Electronics',
+        address: '808 Inclusive Ave, Portland, OR 97201',
+        phone: '1234 567 898',
+        email: 'info@inclusivehomeelectronics.com'
+    },
+    {
+        name: 'Trusted Home Electronics',
+        address: '909 Trusted Way, Chicago, IL 60601',
+        phone: '1234 567 899',
+        email: 'help@trustedhomeelectronics.com'
+    },
+    {
+        name: 'Harmony Electronic Appliances',
+        address: '1010 Harmony Blvd, Los Angeles, CA 90001',
+        phone: '1234 567 900',
+        email: 'support@harmonyelectronicappliances.com'
+    },
+    {
+        name: 'Premier Home Electronics',
+        address: '1111 Premier Road, New York, NY 10001',
+        phone: '1234 567 901',
+        email: 'info@premierhomeelectronics.com'
+    },
+    {
+        name: 'Wellbeing Electronic Appliances',
+        address: '1212 Wellbeing St, Houston, TX 77001',
+        phone: '1234 567 902',
+        email: 'support@wellbeingelectronicappliances.com'
+    },
+    {
+        name: 'Comfort Home Electronics',
+        address: '1313 Comfort Lane, Phoenix, AZ 85001',
+        phone: '1234 567 903',
+        email: 'help@comforthomeelectronics.com'
+    },
+    {
+        name: 'Empathy Electronics',
+        address: '1414 Empathy Blvd, Philadelphia, PA 19101',
+        phone: '1234 567 904',
+        email: 'info@empathyelectronics.com'
+    },
+    {
+        name: 'Tender Home Electronics',
+        address: '1515 Tender Ave, San Antonio, TX 78201',
+        phone: '1234 567 905',
+        email: 'support@tenderhomeelectronics.com'
+    },
+    {
+        name: 'Guardian Home Electronics',
+        address: '1616 Guardian Road, San Diego, CA 92101',
+        phone: '1234 567 906',
+        email: 'info@guardianhomeelectronics.com'
+    },
+    {
+        name: 'Nurture Electronic Appliances',
+        address: '1717 Nurture St, Dallas, TX 75201',
+        phone: '1234 567 907',
+        email: 'support@nurtureelectronicappliances.com'
+    }
+];
+
+
+    let currentPage = 0;
+    const providersPerPage = 4;
+    const totalPages = Math.ceil(providers.length / providersPerPage);
+
+    const providerList = document.querySelector('.provider-list .row');
+    const prevButton = document.querySelector('.pagination .prev');
+    const nextButton = document.querySelector('.pagination .next');
+
+    const renderProviders = (page) => {
+        providerList.innerHTML = '';
+        const start = page * providersPerPage;
+        const end = start + providersPerPage;
+        const providersToShow = providers.slice(start, end);
+
+        providersToShow.forEach(provider => {
+            const providerBox = document.createElement('div');
+            providerBox.classList.add('column');
+            providerBox.innerHTML = `
+                <div class="provider-box">
+                    <h3>${provider.name}</h3>
+                    <p><strong>Address:</strong> ${provider.address}</p>
+                    <p><strong>Phone:</strong> ${provider.phone}</p>
+                    <p><strong>Email:</strong> <a href="mailto:${provider.email}">${provider.email}</a></p>
+                </div>
+            `;
+            providerList.appendChild(providerBox);
+        });
+    };
+
+    const updateButtons = () => {
+        prevButton.disabled = currentPage === 0;
+        nextButton.disabled = currentPage === totalPages - 1;
+    };
+
+    prevButton.addEventListener('click', () => {
+        if (currentPage > 0) {
+            currentPage--;
+            renderProviders(currentPage);
+            updateButtons();
+        }
+    });
+
+    nextButton.addEventListener('click', () => {
+        if (currentPage < totalPages - 1) {
+            currentPage++;
+            renderProviders(currentPage);
+            updateButtons();
+        }
+    });
+
+    // Initial render
+    renderProviders(currentPage);
+    updateButtons();
+});
+</script>
+
+</body>
+</html>
+
